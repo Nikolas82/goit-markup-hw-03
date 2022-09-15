@@ -1,0 +1,183 @@
+:root {
+  --primary-text-color: #757575;
+  --secondary-text-color: #212121;
+  --accent-color: #2196f3;
+  --primary-bg-color: #ffffff;
+  --secondary-bg-color: #2f303a;
+  --button-color: #f5f4fa;
+  --tertiary-color: rgba(255, 255, 255, 0.6);
+  --logo-color: #000000;
+  --secondary-bt-color: #188ce8;
+}
+
+body {
+  background-color: var(--primary-bg-color);
+  color: var(--primary-text-color);
+  font-family: Roboto, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+}
+
+/* Logo */
+.logo {
+  color: var(--accent-color);
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  text-decoration: none;
+}
+.span {
+  color: var(--logo-color);
+}
+.mark {
+  color: var(--primary-bg-color);
+}
+
+/* Site nav */
+.site-nav,
+.auth-nav,
+.section-list {
+  list-style: none;
+}
+.site-nav a {
+  color: var(--secondary-text-color);
+  text-decoration: none;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+.auth-nav a {
+  color: var(--primary-text-color);
+  text-decoration: none;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.list:hover,
+.list:focus {
+  color: var(--accent-color);
+}
+.roll:hover,
+.roll:focus {
+  color: var(--primary-bg-color);
+}
+.button:hover,
+.button:focus {
+  background-color: var(--secondary-bt-color);
+}
+
+.link.current {
+  color: var(--accent-color);
+}
+
+/* Hero */
+.hero {
+  background-color: var(--secondary-bg-color);
+}
+.hero-title {
+  color: var(--primary-bg-color);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.4;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+/* Section */
+.section-title {
+  color: var(--secondary-text-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}
+.caption-title {
+  color: var(--secondary-text-color);
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+.section-text {
+}
+
+/* Team */
+.team {
+  background-color: var(--button-color);
+}
+.team-title {
+  color: var(--secondary-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.2;
+  text-align: center;
+}
+.team-text {
+  font-size: 16px;
+  line-height: 1.2;
+  text-align: center;
+}
+
+/* Button */
+.button {
+  color: var(--primary-bg-color);
+  background-color: var(--accent-color);
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.9;
+  display: flex;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+}
+
+.button-secondary:hover,
+.button-secondary:focus {
+  color: var(--primary-bg-color);
+  background-color: var(--accent-color);
+}
+
+.button-secondary {
+  color: var(--secondary-text-color);
+  background-color: var(--button-color);
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+}
+.prt-title {
+  color: var(--secondary-text-color);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+.prt-text {
+  font-size: 16px;
+  line-height: 1.9;
+}
+
+/* footer */
+.page-footer {
+  background-color: var(--secondary-bg-color);
+}
+.section-list a {
+}
+
+.footer-link {
+  color: var(--tertiary-color);
+}
+
+.section-list a {
+  text-decoration: none;
+}
+.address {
+  font-style: normal;
+}
