@@ -9,7 +9,23 @@
   --logo-color: #000000;
   --secondary-bt-color: #188ce8;
 }
+*{
+  
+}
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+p{
+margin: 0;
+}
+ul{
+  padding-left: 0;
+}
 body {
   background-color: var(--primary-bg-color);
   color: var(--primary-text-color);
@@ -20,6 +36,30 @@ body {
   letter-spacing: 0.03em;
 }
 
+
+
+/* Container */
+.container{
+  width: 1200px;
+  margin-left:auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* Header */
+.page-header{
+  
+}
+.header-container{
+  display: flex;
+  align-items: center;
+}
+.header-item:not(:last-child){
+margin-right: 50px;
+}
+
+
 /* Logo */
 .logo {
   color: var(--accent-color);
@@ -28,6 +68,7 @@ body {
   font-size: 26px;
   line-height: 1.2;
   text-decoration: none;
+  
 }
 .span {
   color: var(--logo-color);
@@ -37,8 +78,20 @@ body {
 }
 
 /* Site nav */
-.site-nav,
-.auth-nav,
+.site-nav{
+  list-style: none;
+  display: flex;
+  margin-left: 93px;
+}
+.auth-nav{
+  list-style: none;
+  display: flex;
+  margin-left: auto;
+}
+.header-nav{
+  display: flex;
+  align-items: center;
+}
 .section-list {
   list-style: none;
 }
@@ -48,6 +101,9 @@ body {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  display: block;
 }
 .auth-nav a {
   color: var(--primary-text-color);
@@ -55,12 +111,18 @@ body {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  display: block;
+  margin: auto;
 }
 
 .list:hover,
 .list:focus {
   color: var(--accent-color);
 }
+
+
 .roll:hover,
 .roll:focus {
   color: var(--primary-bg-color);
@@ -77,18 +139,28 @@ body {
 /* Hero */
 .hero {
   background-color: var(--secondary-bg-color);
+  text-align: center;
+
 }
 .hero-title {
   color: var(--primary-bg-color);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.4;
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-}
+  width: 696px;
+  margin-bottom: 30px;
+  margin-right: 0;
+  
+  }
 
 /* Section */
+.section{
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .section-title {
   color: var(--secondary-text-color);
   font-weight: 700;
@@ -131,9 +203,11 @@ body {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.9;
-  display: flex;
   letter-spacing: 0.06em;
   cursor: pointer;
+  display:block;
+  padding: 10px 32px;
+  border-radius: 4px;
 }
 
 .button-secondary:hover,
@@ -168,8 +242,7 @@ body {
 .page-footer {
   background-color: var(--secondary-bg-color);
 }
-.section-list a {
-}
+
 
 .footer-link {
   color: var(--tertiary-color);
